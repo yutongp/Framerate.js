@@ -18,4 +18,5 @@ tested on:
 	//read Avg Framerate
 	var avgFramerate = framerateObj.updateAvgFramerate();
 	
-	//Reset		framerateObj.reset();
+	//Reset
+	framerateObj.reset();
