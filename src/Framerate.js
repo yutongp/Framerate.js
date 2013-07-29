@@ -1,3 +1,7 @@
+/**
+ * @author Yutong Pei http://yutong.me
+ */
+
 var Framerate = function() {
 	//check bowser type
 	//// Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
@@ -24,11 +28,9 @@ var Framerate = function() {
 	var startTime = timer.now();
 
 	var updateAvgFramerate = function() {
-		// Update it internally
 		var newTime = timer.now();
 		totalTime = newTime - startTime;
 		averageFramerate = totalFrames / totalTime * 1000;
-		// update the HTML
 		return averageFramerate;
 	}
 
@@ -48,7 +50,6 @@ var Framerate = function() {
 			requestId = requestAnimationFrame(stepFunc);
 		},
 		reset: function() {
-			//cancel old
 			cancelAnimationFrame(requestId);
 			totalFrames = 0;
 			totalTime = 0;
