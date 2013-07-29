@@ -11,11 +11,13 @@ tested on:
 
 ###Usage
 
-	//Start
+	//New
 	framerateObj = new Framerate();
+	
+	//Start
 	framerateObj.start();
 	
-	//read Avg Framerate
+	//Read Avg Framerate
 	var avgFramerate = framerateObj.updateAvgFramerate();
 	
 	//Reset
