@@ -20,7 +20,7 @@ var Framerate = function() {
 		window.msRequestAnimationFrame;
 	var cancelAnimationFrame = window.cancelAnimationFrame ||
 		window.mozCancelAnimationFrame || window.webkitCancelAnimationFrame ||
-		window.webkitRequestAnimationFrame;
+		window.msCancelAnimationFrame;
 	var totalFrames = 0;
 	var totalTime = 0;
 	var averageFramerate = 0;
