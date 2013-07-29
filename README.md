@@ -3,7 +3,7 @@ Framerate.js
 
 Monitor web application frame rate
 
-tested on:
+Tested on:
 
 * Chrome v28.0.15
 * Safari 6.05
